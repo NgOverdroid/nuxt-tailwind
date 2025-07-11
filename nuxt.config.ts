@@ -8,5 +8,8 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ]
+  },
+  routeRules: {
+    '/components-gallery': { prerender: true }
   }
 })
