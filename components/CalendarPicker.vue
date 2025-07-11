@@ -1,7 +1,5 @@
 <script setup>
   import dayjs from 'dayjs';
-  import LeftArrow from '../Icons/LeftArrow.vue';
-  import RightArrow from '../Icons/RightArrow.vue';
 
   const bookedDates = defineProps({});
   const currentPage = ref(0);
@@ -100,7 +98,7 @@
           @click="toPrevPage"
           class="absolute left-0"
         >
-          <LeftArrow />
+          <img src="/assests/svg/arrow-left-circle-svgrepo-com.svg" class="w-6 h-6 cursor-pointer" />
         </button>
         <p class="text-lg font-semibold text-center">{{ months[currentPage].label }}</p>
       </div>
@@ -147,7 +145,7 @@
           @click="toNextPage"
           class="absolute right-0"
         >
-          <RightArrow />
+          <img src="/assests/svg/arrow-right-svgrepo-com (1).svg" class="w-6 h-6 cursor-pointer"/>
         </button>
       </div>
 

@@ -1,8 +1,7 @@
-<script setup lang="ts">
+<script setup>
 </script>
 
 <template>
   <div>
-    <CalendarPicker :bookedDates="{loading: true}"/>
   </div>
 </template>
